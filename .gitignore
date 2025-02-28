@@ -1,5 +1,7 @@
 jplay
 misc
-lib/*
 *.mp4
 *.webm
+*.srt
+run.sh
+
