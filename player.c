@@ -795,7 +795,7 @@ void render_ui(VideoContext *ctx, Rectangle rect)
             
             // Position subtitles in the middle of video area
             int subtitle_x = (screen_width - subtitle_width) / 2;
-            int subtitle_y = rect.y + rect.height / 2;
+            int subtitle_y = rect.y + 4*rect.height / 5;
             
             // Draw background box for better readability
             DrawRectangle(subtitle_x - 10, subtitle_y - 5, 
