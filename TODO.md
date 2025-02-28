@@ -4,4 +4,6 @@ FIX!
 - [x] yt-dlp integration
 - [x] Audio
 - [x] audio control
-- [ ] seeking
+- [x] seeking
+- [x] disable audio with -no-audio flag
+- [x] subtitle support for YouTube videos

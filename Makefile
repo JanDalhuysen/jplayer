@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wextra -Wall -g
-IFLAGS = 
+IFLAGS = -I include
 LFLAGS = -L lib
 LIBS += -lraylib -lm -lavcodec -lavformat -lavutil -lswscale
 LIBS += -lraylib -pthread -ldl -lm -lavcodec -lavformat -lavutil -lswscale -lswresample
@@ -35,7 +35,7 @@ ffmpeg:
 		echo "#!/bin/sh\nexport LD_LIBRARY_PATH=lib/ffmpeg/lib\nexec ./jplay \$$@" > run.sh; \
 		chmod +x run.sh; \
 	fi
-	@echo "#!/bin/sh\nexport LD_LIBRARY_PATH=lib/ffmpeg/lib\nexec ./jplay \$$@" > run.sh;
+	echo "#!/bin/sh\nexport LD_LIBRARY_PATH=lib/ffmpeg/lib\nexec ./jplay \$$@" > run.sh;
 
 # RAYLIB
 lib/libraylib.a:
